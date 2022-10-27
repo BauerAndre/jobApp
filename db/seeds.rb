@@ -8,7 +8,7 @@
 
 require 'faker'
 
-puts 'Creating 100 fake restaurants...'
+puts 'Creating 50 fake jobs...'
 50.times do
   job = Job.new(
     name: Faker::Company.name,
@@ -19,6 +19,6 @@ puts 'Creating 100 fake restaurants...'
     moreInfo: Faker::Lorem.paragraph_by_chars,
     benefits: Faker::Games::Zelda.item
   )
-  restaurant.save!
+  job.save!
 end
 puts 'Finished!'
