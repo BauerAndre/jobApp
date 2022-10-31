@@ -1,17 +1,18 @@
 <h1>Pages#home</h1>
 <p class="text-warning">Find me in app/views/pages/home.html.erb</p>
 <div class="container">
-  <% 50.times do %>
-    <div class="card-trip">
-      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-      <div class="card-trip-infos">
-        <div>
-          <h2>Title here</h2>
-          <p>Short description here!</p>
+  <%# <% 50.times do %>
+    <% @jobs.each do |job| %>
+      <div class="card-trip">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+        <div class="card-trip-infos">
+          <div>
+            <h2><%=job.title%></h2>
+            <p><%= job.description %></p>
+          </div>
+          <h2 class="card-trip-pricing">£99.99</h2>
+          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
         </div>
-        <h2 class="card-trip-pricing">£99.99</h2>
-        <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
       </div>
-    </div>
-  <% end %>
-</div>
+    <% end %>
+  </div>

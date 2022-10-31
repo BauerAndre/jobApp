@@ -11,7 +11,7 @@ require 'faker'
 puts 'Creating 50 fake jobs...'
 50.times do
   job = Job.new(
-    name: Faker::Company.name,
+    # name: Faker::Company.name,
     title: Faker::Job.title,
     location: Faker::Address.city,
     salary: rand(0..5),
