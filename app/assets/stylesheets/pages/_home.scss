@@ -1,4 +1,10 @@
 // Specific CSS for your home-page
+.container{
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+}
 
 .card-trip {
   overflow: hidden;
