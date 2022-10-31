@@ -1,9 +1,10 @@
 // Specific CSS for your home-page
 .container{
-  gap: 5px;
+  gap: 10px;
   display: flex;
   flex-direction: row;
   height: fit-content;
+  flex-wrap: wrap;
 }
 
 .card-trip {
